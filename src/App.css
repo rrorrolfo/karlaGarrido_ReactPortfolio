@@ -15,10 +15,42 @@
 
 #main_nav,
 #title {
-  text-align: center;
   margin: 0;
 }
 
+#main_nav,
+#title,
+#profile,
+.actress,
+.year,
+#copywright {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: initial;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*.container {
+  background-image: url(img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+
+/*********** Footer *****************/
+
+#copywright {
+  margin: 25px 0;
+}
 
 /*********** Title *****************/
 
@@ -30,7 +62,6 @@
 /*********** Main Navigator Menu *****************/
 
 #main_nav {
-  list-style: none;
   padding: 20px 0;
   display: none;
 }
@@ -71,6 +102,45 @@
   width: 100%;
 }
 
+/*********** Perfil data *****************/
+
+.actress,
+.year {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.characteristics {
+  font-size: 1rem;
+}
+
+.characteristics li{
+  margin: 5px 0;
+}
+
+.pass:last-child {
+  margin-top: 20px;
+}
+
+/*********** Portfolio gallery *****************/
+
+.year {
+  margin-bottom: 25px;
+}
+
+.photo_wrapper {
+  margin-bottom: 20px;
+}
+
+.photo_wrapper,
+.photo_wrapper img {
+  width: 100%;
+}
+
+.galleryContainer img:last-child {
+  margin-bottom: 0;
+}
+
 /*********** Media Queries *****************/
 
 @media(min-width: 768px) {
@@ -107,16 +177,55 @@
     top: 55%;
   }
 
+  /*********** Portafolio *****************/
+  
+  .actress,
+  .year {
+  font-size: 1.5rem;
+}
+
+  .galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .galleryContainer p {
+    flex-basis: 100%;
+  }
+
+  .photo_wrapper  {
+    flex-basis: 45%;
+  }
+
+  #profile {
+    margin-top: 53px;
+  }
+
 }
 
 @media(min-width: 1024px) {
+
+  #title,
+  #main_nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  #title {
+    padding-top: 22.5px;
+  }
 
   #main_nav{
     padding-left: 5%;
   }
 
   #main_nav li {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
+  }
+
+  #presentation_text {
+    margin-left: 5%;
   }
 
   #presentation_text p {
@@ -125,5 +234,31 @@
   
   #presentation_text p:last-child {
     font-size: 3.5rem;
+  }
+
+/*********** Portfolio gallery *****************/
+
+  .actress,
+  .year {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #profile {
+    flex-basis: 22.5%;
+    order: 2;
+  }
+
+  .galleryContainer {
+    flex-basis: 72.5%;
+    order: 1;
+  }
+
+  .photo_wrapper  {
+    flex-basis: 22%;
   }
 }

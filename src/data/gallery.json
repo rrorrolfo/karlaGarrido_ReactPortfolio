@@ -1,0 +1,31 @@
+{
+    "photos": {
+        "portafolio_photos": [
+            {
+                "url":"../../img/fotoimpresion.jpg",
+                "title": "Karla Garrido sonriendo",
+                "alt": "Karla Garrido sonriendo",
+                "id": 1
+            },
+            {
+                "url":"../../img/closeupkarla.jpg",
+                "title": "Karla Garrido de frente",
+                "alt": "Karla Garrido de frente",
+                "id": 2
+            },
+            {
+                "url":"../../img/blancoynegro.jpg",
+                "title": "Karla Garrido cara lavada",
+                "alt": "Karla Garrido cara lavada",
+                "id": 3
+            },
+            {
+                "url":"../../img/completa.jpg",
+                "title": "Karla Garrido cuerpo completo",
+                "alt": "Karla Garrido cuerpo completo",
+                "id": 4
+            }
+        ],
+        "galeria_photos": {}
+    }
+}
