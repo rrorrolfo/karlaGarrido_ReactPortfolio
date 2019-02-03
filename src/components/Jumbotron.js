@@ -7,7 +7,7 @@ const Jumbotron = () => {
             <img src={ portada } alt="Actriz Mexicana Karla Garrido" title="Actriz Mexicana Karla Garrido"/>
             <div id="presentation_text">
                 <p>Karla Garrido</p>
-                <p>Actríz Mexicana</p>
+                <p>Actriz</p>
             </div>
         </div>
     )
