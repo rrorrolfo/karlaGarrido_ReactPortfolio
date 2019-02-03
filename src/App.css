@@ -1,32 +1,62 @@
-.App {
+
+/*********** General styling *****************/
+
+#main_nav,
+#title {
   text-align: center;
+  background-color: #F7f7f7;
+  margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+
+/*********** Title *****************/
+
+#title {
+  padding: 25px 0;
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*********** Main Navigator Menu *****************/
+
+#main_nav {
+  list-style: none;
+  padding: 20px 0;
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+#main_nav li {
+  padding: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*********** Jumbotron *****************/
+#jumbotron img {
+  width: 100%;
+  height: 90vh;  
+  top: 10%;
+  
 }
+
+#jumbotron {
+  height: 90vh;
+  position: fixed;
+  z-index: -1;
+}
+
+#presentation_text {
+  width: 90%;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 2.55%;
+  z-index: 1;
+}
+
+#presentation_text p {
+  margin: 10px 0;
+}
+
+#presentation_text p:last-child {
+  font-size: 3rem;
+}
+
+/*********** Jumbotron *****************/
