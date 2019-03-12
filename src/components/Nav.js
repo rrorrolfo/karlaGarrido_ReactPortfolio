@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom";
 const Nav = () => {
     return (
         <ul id="main_nav">
-            <li>Acerca</li>
+            <li><NavLink to="/acerca">Acerca</NavLink></li>
             <li><NavLink to="/portafolio">Portafolio</NavLink></li>
-            <li>Trayectoria</li>
+            <li><NavLink to="/trayectoria">Trayectoria</NavLink></li>
             <li>Demo Reel</li>
-            <li>contacto</li>
+            <li>Contacto</li>
         </ul>
     )
 }

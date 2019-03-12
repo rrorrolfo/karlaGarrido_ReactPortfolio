@@ -5,7 +5,9 @@ import {
   Route} from "react-router-dom";
 import Header from "./components/Header";
 import Jumbotron from "./components/Jumbotron";
+import Acerca from "./components/acerca/Acerca";
 import Portafolio from './components/portafolio/Portafolio';
+import Trayectoria from "./components/trayectoria/Trayectoria";
 import Footer from "./components/Footer";
 
 class App extends Component {
@@ -16,7 +18,9 @@ class App extends Component {
         <div>
           <Header />
           <Route exact path="/" component={ Jumbotron }/>
+          <Route path="/acerca" component={ Acerca }/>
           <Route path="/portafolio" component={ Portafolio }/>
+          <Route path="/trayectoria" component={ Trayectoria }/>
           <Footer />
         </div>
       </BrowserRouter>

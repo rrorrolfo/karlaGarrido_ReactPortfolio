@@ -23,12 +23,14 @@
 #profile,
 .actress,
 .year,
+#acerca h1,
 #copywright {
   text-align: center;
 }
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 a:visited {
@@ -40,16 +42,14 @@ ul {
   padding: 0;
 }
 
-/*.container {
-  background-image: url(img/fondo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}*/
-
 /*********** Footer *****************/
 
 #copywright {
-  margin: 25px 0;
+  padding: 25px 0;
+}
+
+#copywright p {
+  margin: 0;
 }
 
 /*********** Title *****************/
@@ -80,6 +80,10 @@ ul {
 #jumbotron {
   height: 90vh;
   position: fixed;
+}
+
+.portada_lg {
+  display: none;
 }
 
 #presentation_text {
@@ -120,6 +124,13 @@ ul {
 
 .pass:last-child {
   margin-top: 20px;
+}
+
+/*********** Acerca Section *****************/
+
+#acerca {
+  padding: 20px;
+  line-height: 1.5;
 }
 
 /*********** Portfolio gallery *****************/
@@ -177,6 +188,14 @@ ul {
     top: 55%;
   }
 
+  .portada_sm {
+    display: none;
+  }
+
+  .portada_lg {
+    display: initial;
+  }
+
   /*********** Portafolio *****************/
   
   .actress,
@@ -200,6 +219,13 @@ ul {
 
   #profile {
     margin-top: 53px;
+  }
+
+  /*********** Portafolio *****************/
+
+  #acerca {
+    width: 90%;
+    margin: 0 auto;
   }
 
 }
