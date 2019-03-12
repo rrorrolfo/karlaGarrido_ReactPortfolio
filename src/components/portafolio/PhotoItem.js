@@ -1,9 +1,9 @@
 import React from "react";
 
-const PhotoItem = ( props ) => {
+const PhotoItem = ({ path, data}) => {
     return (
         <div className="photo_wrapper">
-            <img src={ props.path } alt={ props.data.alt } title= { props.data.title }/>
+            <img src={ path } alt={ data.alt } title= { data.title }/>
         </div>
     )
 }

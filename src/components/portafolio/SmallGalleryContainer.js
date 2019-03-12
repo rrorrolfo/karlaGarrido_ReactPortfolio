@@ -2,8 +2,8 @@ import React from "react";
 import PhotoItem from "./PhotoItem";
 import { photos } from "../../data/gallery.json";
 const images = [
-    require("../../img/fotoimpresion.jpg"),
     require("../../img/closeupkarla.jpg"),
+    require("../../img/fotoimpresion.jpg"),
     require("../../img/blancoynegro.jpg"),
     require("../../img/completa.jpg")
 ]

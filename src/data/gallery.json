@@ -2,15 +2,15 @@
     "photos": {
         "portafolio_photos": [
             {
-                "url":"../../img/fotoimpresion.jpg",
-                "title": "Karla Garrido sonriendo",
-                "alt": "Karla Garrido sonriendo",
-                "id": 1
-            },
-            {
                 "url":"../../img/closeupkarla.jpg",
                 "title": "Karla Garrido de frente",
                 "alt": "Karla Garrido de frente",
+                "id": 1
+            },
+            {
+                "url":"../../img/fotoimpresion.jpg",
+                "title": "Karla Garrido sonriendo",
+                "alt": "Karla Garrido sonriendo",
                 "id": 2
             },
             {
