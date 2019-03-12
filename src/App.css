@@ -152,6 +152,22 @@ ul {
   margin-bottom: 0;
 }
 
+/*********** Acerca Section *****************/
+
+#demos {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+iframe {
+  width: 90%;
+  height: 250px;
+  border: none;
+}
+
 /*********** Media Queries *****************/
 
 @media(min-width: 768px) {
@@ -228,6 +244,12 @@ ul {
     margin: 0 auto;
   }
 
+  /*********** Demos *****************/
+
+  #demos {
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
 
 @media(min-width: 1024px) {
@@ -287,4 +309,11 @@ ul {
   .photo_wrapper  {
     flex-basis: 22%;
   }
+
+  /*********** Demos *****************/
+
+  #demos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }

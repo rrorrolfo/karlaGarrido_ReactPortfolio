@@ -8,6 +8,7 @@ import Jumbotron from "./components/Jumbotron";
 import Acerca from "./components/acerca/Acerca";
 import Portafolio from './components/portafolio/Portafolio';
 import Trayectoria from "./components/trayectoria/Trayectoria";
+import Demos from "./components/demos/Demos";
 import Footer from "./components/Footer";
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/acerca" component={ Acerca }/>
           <Route path="/portafolio" component={ Portafolio }/>
           <Route path="/trayectoria" component={ Trayectoria }/>
+          <Route path="/demos" component={ Demos }/>
           <Footer />
         </div>
       </BrowserRouter>
