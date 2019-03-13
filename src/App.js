@@ -25,7 +25,7 @@ class App extends Component {
           <Route path="/portafolio" component={ Portafolio }/>
           <Route path="/trayectoria" component={ Trayectoria }/>
           <Route path="/demos" component={ Demos }/>
-          {/*<Route path="/contacto" component={ Contacto }/>*/}
+          <Route path="/contacto" component={ Contacto }/>
           <Footer />
           <SocialMedia />
         </div>

@@ -42,6 +42,11 @@ ul {
   padding: 0;
 }
 
+.margin_centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*********** Footer *****************/
 
 #copywright {
@@ -181,11 +186,67 @@ iframe {
   height: 200px;
 }
 
-/*********** Social Media *****************/
+/*********** Contact Form *****************/
+
+form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+form input,
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  padding-left: 5px;
+}
+
+form input {
+  height: 40px;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 1rem;
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder { /* Firefox 19+ */
+  font-size: 1rem;
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder { /* IE 10+ */
+  font-size: 1rem;
+}
+
+textarea:-moz-placeholder,
+input:-moz-placeholder { /* Firefox 18- */
+  font-size: 1rem;
+}
+
+#submit {
+  height: 50px;
+  width: 100px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #fff;
+  border: 2px solid rgb(133, 133, 133);
+  color: rgb(133, 133, 133); 
+  letter-spacing: 2px;
+}
+
+
+/*********** Social Media Menu*****************/
 
 #social_media_container {
   position: fixed;
   top: 50%;
+  display: none;
 }
 
 #social_media_container a {
@@ -213,6 +274,7 @@ iframe {
 
 #social_media_container div:nth-child(3) {
   background-image: url(./img/insta_back.jpg);
+  background-size: cover;
 }
 
 /*********** Media Queries *****************/
@@ -297,6 +359,27 @@ iframe {
     grid-template-columns: 1fr 1fr;
   }
 
+  /*********** Form *****************/
+
+  #contacto_container {
+    display: flex;
+  }
+
+  #contacto_container form {
+    flex-basis: 45%;
+    margin-right: 0;
+  }
+
+  #img_wrapper {
+    flex-basis: 20%;
+  }
+
+  /*********** Social Media *****************/
+
+  #social_media_container {
+    display: initial;
+  }
+
 }
 
 @media(min-width: 1024px) {
@@ -361,6 +444,17 @@ iframe {
 
   #demos {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /*********** Form *****************/
+
+  #contacto_container form {
+    flex-basis: 40%;
+    margin-top: 50px;
+  }
+
+  #img_wrapper {
+    padding-top: 50px;
   }
 
 }
