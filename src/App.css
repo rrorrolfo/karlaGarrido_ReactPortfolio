@@ -168,6 +168,53 @@ iframe {
   border: none;
 }
 
+/*********** Contacto section *****************/
+
+#img_wrapper {
+  width: 200px;
+  margin: 50px auto 0;
+}
+
+#contacto_img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+/*********** Social Media *****************/
+
+#social_media_container {
+  position: fixed;
+  top: 50%;
+}
+
+#social_media_container a {
+  display: block;
+  padding: 10px;
+}
+
+.social_icon {
+  height: 30px;
+}
+
+#fb_icon path,
+#mail_icon path,
+#insta_icon path {
+  fill: #fff;
+}
+
+#social_media_container div:nth-child(1) {
+  background-color: #385998;
+}
+
+#social_media_container div:nth-child(2) {
+  background-color: #d14836;
+}
+
+#social_media_container div:nth-child(3) {
+  background-image: url(./img/insta_back.jpg);
+}
+
 /*********** Media Queries *****************/
 
 @media(min-width: 768px) {
