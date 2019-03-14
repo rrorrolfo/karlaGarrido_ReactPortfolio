@@ -190,7 +190,11 @@ iframe {
   padding: 25px 0;
 }
 
-#teatro_container span {
+.trayectoria_type_container {
+  margin-bottom: 25px;
+}
+
+.trayectoria_type_container span {
   margin-left: auto;
 }
 
@@ -430,6 +434,14 @@ input:-moz-placeholder { /* Firefox 18- */
     grid-template-columns: 1fr 1fr;
   }
 
+
+  /*********** Trayectoria acordeon menus *****************/
+
+  .trayectoria_type_container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   /*********** Form *****************/
 
   #contacto_container {
@@ -515,6 +527,20 @@ input:-moz-placeholder { /* Firefox 18- */
 
   #demos {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /*********** Trayectoria acordeon menus *****************/
+
+  #trayectoria_container {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .trayectoria_type_container {
+    flex-basis: 30%;
   }
 
   /*********** Form *****************/

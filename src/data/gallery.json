@@ -127,13 +127,71 @@
         "trayectoria_television": [
             {
                 "title":"Serie Señora Acero 3 (La mexicana)",
-                "description": ["Telemundo (2016)."]
+                "description": ["Telemundo (2016)."],
+                "id": 20
             },
             {
                 "title":"Serie del canal 11 'Los Minondo' (Cecilia)",
-                "description": ["Director: Carlos Bolado.", "(cap.5 y 7), (2010)."]
+                "description": ["Director: Carlos Bolado.", "(cap.5 y 7), (2010)."],
+                "id": 21
             }
         ],
-        "trayectoria_cine": []
+        "trayectoria_cine": [
+            {
+                "title":"'Chalma (Natalia [co protagónico de Harold Torres y Leonardo Alonso])'",
+                "description": ["Dirección: Miguel Angel Fernández.", "Bala Films 2015.", "articipante de la FICG2016, seleccionado para la Competencia Oficial del Lakino Berlin en el Latin American Short Film (2016), FIGG 2016 y Shorts Shorts films"],
+                "id": 22
+            },
+            {
+                "title":"'Juan Machete' (Ana [co protagónico])",
+                "description": ["AMCI 2015.", "Nominada a mejor actriz en los premios AMCI.", "Cortometraje ganadoren los premios AMCI y seleccionado para el Filmfreeway en Colombia (2016)."],
+                "id": 23
+            },
+            {
+                "title":"'Sueños' (Alejandra Pérez).",
+                "description": ["48hrs project film fest (2015)."],
+                "id": 24
+            },
+            {
+                "title":"'Hora del té' de Ovidio León",
+                "description": ["Participante del festival 48hrsFILM festival (2014)."],
+                "id": 25
+            },
+            {
+                "title":"'Cuatro cigarrillos' (Principal)",
+                "description": ["Dirección de Rodrigo Díaz.", "CENTR0 (2014)."],
+                "id": 26
+            },
+            {
+                "title":"'Breve relato de un corazón'",
+                "description": ["AMCI (2014 )."],
+                "id": 27
+            },
+            {
+                "title":"'Terror' (Ser maligno)",
+                "description": ["Director: Sasil Echeverría.", "Cancún (2013)."],
+                "id": 28
+            },
+            {
+                "title":"'Tequila metal' (Atenas [principal])",
+                "description": ["Director: Javier Bosques.", "Master en UCLA (2012)."],
+                "id": 29
+            },
+            {
+                "title":"'Adrenalina'",
+                "description": ["Opera prima.", "Dirección de Omar Rouge (2010)."],
+                "id": 30
+            },
+            {
+                "title":"Cortometraje 'Un general muy aguerrido'",
+                "description": ["Coaching de actores y casting.", "Kanöafilms (2015)."],
+                "id": 31
+            },
+            {
+                "title":"Cortometraje 'Un día cualquiera'.",
+                "description": ["Dirección, producción y guíon.", "CENTR0 (2014).", "Participante del Festival de videodanza en La Habana, Cuba (2011)."],
+                "id": 32
+            }
+        ]
     }
 }
