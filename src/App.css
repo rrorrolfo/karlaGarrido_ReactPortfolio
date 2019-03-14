@@ -24,7 +24,8 @@
 .actress,
 .year,
 #acerca h1,
-#copywright {
+#copywright,
+.title_acordeon_menu {
   text-align: center;
 }
 
@@ -171,6 +172,76 @@ iframe {
   width: 90%;
   height: 250px;
   border: none;
+}
+
+/*********** Trayectoria Section *****************/
+
+#trayectoria_container {
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+.title_acordeon_menu {
+  font-size: 1.2rem;
+  font-weight: 900;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 25px 0;
+}
+
+#teatro_container span {
+  margin-left: auto;
+}
+
+.tab-group {
+  margin: 0 auto;
+  max-width: 40em;
+  width: 100%
+}
+
+.tab {
+  position: relative;
+  width: 100%;
+}
+
+.tab input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -998;
+}
+
+.tab label {
+  background-color: #fff;
+  color: #000;
+  display: block;
+  font-weight: 700;
+  line-height: 3;
+  padding-left: .5em;
+  transition: letter-spacing .55s;
+}
+
+.tab input:focus + label,
+.tab label:hover {
+  background-color: rgb(238, 237, 237);
+  letter-spacing: 1px;
+}
+
+.tab-content {
+  background-color: rgb(238, 237, 237);
+  padding-left: 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+.tab-content p {
+  margin: 1em 0;
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 8em;
 }
 
 /*********** Contacto section *****************/
