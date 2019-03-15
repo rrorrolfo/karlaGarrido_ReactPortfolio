@@ -48,6 +48,10 @@ ul {
   margin-right: auto;
 }
 
+.is_hidden {
+  display: none;
+}
+
 /*********** Footer *****************/
 
 #copywright {
@@ -313,6 +317,23 @@ input:-moz-placeholder { /* Firefox 18- */
   border: 2px solid rgb(133, 133, 133);
   color: rgb(133, 133, 133); 
   letter-spacing: 2px;
+}
+
+.validation_error {
+  color: #ec5249;
+  margin: 0 0 10px;
+  padding-left: 15px;
+  font-size: .9rem;
+}
+
+.validation_error_background {
+  background-color: #ec5249;
+  border: none;
+  color: #fff;
+}
+
+.validation_error_background::placeholder {
+  color: #fff;
 }
 
 
