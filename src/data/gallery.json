@@ -29,168 +29,83 @@
         "galeria_photos": {},
         "trayectoria_teatro": [
             {
-                "title": "'Versus'",
-                "description": ["Unipersonal. Dirección y Performer: Karla Garrido. Asesoría en Dirección: Laura Uribe.", "Cantante: Emiliano Ulloa. Presentado en Carretera 45.  Agosto 2016."],
+                "title": "Mare Nostrum",
+                "description": ["Autor: Angelica Lidell.", "Dirección: Laura Uribe.", "Festival Politik im Freien Theater en Munich, Alemania, 2018.", "Festival Theaterformer, en Hannover, Alemania, 2017."],
                 "id": 1
             },
             {
-                "title":"Miembro de la compañía 'Gitanos Teatro' (Teatro de Calle)",
-                "description": ["Bajo la dirección de Jessica Esther Moreno y Carla Mireya Alvarez."],
+                "title":"Matrimonio Palabrakis",
+                "description": ["Autor: Angelida Lidell.", "Dirección: Laura Uribe.", "Festival de Teatro Internacional en Manizales, Colombia, 2017."],
                 "id": 2
             },
             {
-                "title":"Taller de teatro para niños",
-                "description": ["Comunidad de San Miguel Cajonos, Oaxaca, México. (2016)", "Obra de teatro 'Nahualito' (Creación colectiva).", "Gira Sierra Huichola (Septiembre 2015)."],
+                "title":"Versus",
+                "description": ["Autor: Unipersonal.", "Dirección: Karla Garrido", "Dentro de la Primera Invasión Escénica en el Hostal Regina, 2017."],
                 "id": 3
             },
             {
-                "title":"Taller de teatro para niños impartido en la Biblioteca Vasconcelos",
-                "description": ["El taller se llevo a cabo a lo largo del 2015."],
+                "title":"Oasis Actors",
+                "description": ["Dirección: Joan Gracia y Enric Ases. Compañia 'El Tricicle'.", "Miembro de la compañía de Teatro del Hotel Grand Oasis, Cancún, especializada en improvisación  y comedia. Barcelona/Cancún, México, 2014 - 2013."],
                 "id": 4
             },
             {
-                "title":"'This is my home'",
-                "description": ["Proyecto de teatro posdramático.", "Dirección de Laura Uribe."],
+                "title":"Las Tres Hermanas",
+                "description": ["Autor: Anton Chejov", "Dirección: Martin Acosta.", "2019."],
                 "id": 5
-            },
-            {
-                "title":"Miembro de la compañía de Teatro del Hotel Grand Oasis, Cancún",
-                "description": ["Especialidad en improvisación", "Dirección de Joan Gracia y Enric Ases de la compañia 'El Tricicle' (Barcelona - Cancún, México) (2013 -2014)"],
-                "id": 6
-            },
-            {
-                "title":"Taller de teatro para adolescentes",
-                "description": ["Cancún, México. XPDS arts. (2014)."],
-                "id": 7
-            },
-            {
-                "title":"Miembro de la compañía de teatro de la Policía Federal 'Código Liberarte'",
-                "description": ["Dirección de Atahualpa Palacios y Juan Morán(2012)."],
-                "id": 8
-            },
-            {
-                "title":"'Lolita Zanquilarga' (niña mala).",
-                "description": ["Autor y director: Jorge Domínguez (2012)."],
-                "id": 9
-            },
-            {
-                "title":"'Mucho ruido y pocas nueces' de William Shakespeare (Hero)",
-                "description": ["Dirección de Juan Moran.", "Teatro Julio Castillo (2011)."],
-                "id": 10
-            },
-            {
-                "title":"'Trampa en el viaje' (Rita).",
-                "description": ["Director Juan Moran.", "Gira por México (2011)."],
-                "id": 11
-            },
-            {
-                "title":"Taller especializado en movimiento escénico y corporal a la compañia (2011)",
-                "description": ["Enfocado en el movimiento fuera y dentro del escenario."],
-                "id": 12
-            },
-            {
-                "title":"'De Tlatilco a Tlatelolco'",
-                "description": ["Adaptación y dirección de Noe Alvarado.", "Participante del Festival Universitario de Teatro (2011)."],
-                "id": 13
-            },
-            {
-                "title":"'Vistazos' (Liliana)",
-                "description": ["Dirección de Mireya Álvarez.", "Con temporada en el Foro de la diversidad y Studio 7.", "Participante del Festival Universitario de Teatro (2010)"],
-                "id": 14
-            },
-            {
-                "title":"'Las tres hermanas' de Anton Chejov (Irina)",
-                "description": ["Dirección de Martín Acosta.", "Con temporada en el Teatro Salvador Novo (2009)."],
-                "id": 15
-            },
-            {
-                "title":"Espectáculo circense 'Tres héroes' (la payasa Vica).",
-                "description": ["Dirección de Andrea Peláez y Guillermo Nava.", "Presentado en la Carpa Cirko de Mente (2009)."],
-                "id": 16
-            },
-            {
-                "title":"'Triciclo Pro'",
-                "description": ["Versión libre de “El triciclo” de Fernando Arrabal (Mita).", "Compañía Corrus."],
-                "id": 17
-            },
-            {
-                "title":"Teatro",
-                "description": ["Dirección de Esau Corona.", "Participante del Día Mundial del Teatro en el Foro Antonio López Mancera (2009)."],
-                "id": 18
-            },
-            {
-                "title":"Historias debajo de la mesa de David Gaitán.",
-                "description": ["Dirección de Mauricio Jimenez.", "Temporada en el foro Antonio Lopez Mancera (2008)"],
-                "id": 19
             }
         ],
         "trayectoria_television": [
             {
-                "title":"Serie Señora Acero 3 (La mexicana)",
-                "description": ["Telemundo (2016)."],
-                "id": 20
+                "title":"'Un golpe al corazón' - Unitario, Capítulo 1263",
+                "description": ["Personaje: Lucía.", "Televisora: Televisa, 2019."],
+                "id": 10
             },
             {
-                "title":"Serie del canal 11 'Los Minondo' (Cecilia)",
-                "description": ["Director: Carlos Bolado.", "(cap.5 y 7), (2010)."],
-                "id": 21
+                "title":"'Falsos Falsificados' - Teleserie",
+                "description": ["Personaje: Lupe.", "Televisora: Blim, 2017."],
+                "id": 11
+            },
+            {
+                "title":"'Señora Acero 3' - Teleserie",
+                "description": ["Personaje: La Mexicana.", "Televisora: Telemundo, 2016."],
+                "id": 12
+            },
+            {
+                "title":"'Los Minondo' - Serie",
+                "description": ["Personaje: Cecilia.", "Televisora: Canal 11, 2010."],
+                "id": 13
             }
         ],
         "trayectoria_cine": [
             {
-                "title":"'Chalma (Natalia [co protagónico de Harold Torres y Leonardo Alonso])'",
-                "description": ["Dirección: Miguel Angel Fernández.", "Bala Films 2015.", "articipante de la FICG2016, seleccionado para la Competencia Oficial del Lakino Berlin en el Latin American Short Film (2016), FIGG 2016 y Shorts Shorts films"],
+                "title":"'Leona' - Largometraje",
+                "description": ["Personaje: Karen.", "Dirección: Isaac Cherem.", "Producción: Fosforescente, 2018."],
+                "id": 20
+            },
+            {
+                "title":"'Bolero' - Cortometraje",
+                "description": ["Personaje: Carmen.", "Dirección: Simone Carnesecchi.", "Producción: Italia/México, 2017."],
+                "id": 21
+            },
+            {
+                "title":"'Rencor Tatuado' - Largometraje",
+                "description": ["Personaje: Presa.", "Dirección: Julián Hernández", "Producción: Roberto Fiesco, 2017."],
                 "id": 22
             },
             {
-                "title":"'Juan Machete' (Ana [co protagónico])",
-                "description": ["AMCI 2015.", "Nominada a mejor actriz en los premios AMCI.", "Cortometraje ganadoren los premios AMCI y seleccionado para el Filmfreeway en Colombia (2016)."],
+                "title":"'Dos Veces Tú' - Largometraje",
+                "description": ["Personaje: Melissa.", "Dirección: Saló Arkenazi.", "Producción: Fosforescente, 2016."],
                 "id": 23
             },
             {
-                "title":"'Sueños' (Alejandra Pérez).",
-                "description": ["48hrs project film fest (2015)."],
+                "title":"'Chalma' - Mediometraje",
+                "description": ["Personaje: Natalia.", "Dirección: Miguel Ángel Fernandez.", "Producción: Bala Films, 2016."],
                 "id": 24
             },
             {
-                "title":"'Hora del té' de Ovidio León",
-                "description": ["Participante del festival 48hrsFILM festival (2014)."],
+                "title":"'Juan Machete' - Cortometraje",
+                "description": ["Personaje: Ana.", "Dirección: Danny Chamo Serrano.", "Producción: Paria Films, 2016.", "Nominada a MEJOR ACTRÍZ en los premios AMCI del 2016."],
                 "id": 25
-            },
-            {
-                "title":"'Cuatro cigarrillos' (Principal)",
-                "description": ["Dirección de Rodrigo Díaz.", "CENTR0 (2014)."],
-                "id": 26
-            },
-            {
-                "title":"'Breve relato de un corazón'",
-                "description": ["AMCI (2014 )."],
-                "id": 27
-            },
-            {
-                "title":"'Terror' (Ser maligno)",
-                "description": ["Director: Sasil Echeverría.", "Cancún (2013)."],
-                "id": 28
-            },
-            {
-                "title":"'Tequila metal' (Atenas [principal])",
-                "description": ["Director: Javier Bosques.", "Master en UCLA (2012)."],
-                "id": 29
-            },
-            {
-                "title":"'Adrenalina'",
-                "description": ["Opera prima.", "Dirección de Omar Rouge (2010)."],
-                "id": 30
-            },
-            {
-                "title":"Cortometraje 'Un general muy aguerrido'",
-                "description": ["Coaching de actores y casting.", "Kanöafilms (2015)."],
-                "id": 31
-            },
-            {
-                "title":"Cortometraje 'Un día cualquiera'.",
-                "description": ["Dirección, producción y guíon.", "CENTR0 (2014).", "Participante del Festival de videodanza en La Habana, Cuba (2011)."],
-                "id": 32
             }
         ]
     }
