@@ -78,7 +78,7 @@ class Contacto extends Component {
     render() {
 
         return(
-            <div id="contacto_container">
+            <div id="contacto_container" className="sticky_footer">
 
                 <form onSubmit={this.handleSubmit} className="margin_centered">
 

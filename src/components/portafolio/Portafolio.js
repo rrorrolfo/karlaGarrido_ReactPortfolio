@@ -6,7 +6,7 @@ const Portafolio = () => {
 
 
     return (
-        <div className="container">
+        <div className="container sticky_footer">
             <Profile />
             <SmallGalleryContainer />
         </div>

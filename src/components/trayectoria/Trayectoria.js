@@ -17,7 +17,7 @@ const Trayectoria = () => {
         <div className="tab-group" key={obra.id}>
             <div className="tab">
                 <input id={`tab-${obra.id}`} type="radio" name={type}/>
-                <label htmlFor={`tab-${obra.id}`}><span> + </span> {obra.title}  </label>
+                <label htmlFor={`tab-${obra.id}`}><span className="plus_symbol"> + </span> {obra.title}  </label>
                 <div className="tab-content">
                     {obra.description.map( (text, index) => <p key={index + 1}>{text}</p>)}
                 </div>
@@ -26,7 +26,7 @@ const Trayectoria = () => {
     }
 
     return (
-        <div id="trayectoria_container">
+        <div id="trayectoria_container" className="sticky_footer">
 
             <div className="trayectoria_type_container">
                 <p className="title_acordeon_menu">Trayectoria en Cine</p>

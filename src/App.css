@@ -181,8 +181,7 @@ iframe {
 /*********** Trayectoria Section *****************/
 
 #trayectoria_container {
-  margin-top: 25px;
-  padding: 0 20px;
+  padding: 25px 20px 0;
 }
 
 .title_acordeon_menu {
@@ -192,6 +191,7 @@ iframe {
   color: #fff;
   margin: 0;
   padding: 25px 0;
+  letter-spacing: 2px;
 }
 
 .trayectoria_type_container {
@@ -200,6 +200,10 @@ iframe {
 
 .trayectoria_type_container span {
   margin-left: auto;
+}
+
+span.plus_symbol {
+  font-size: 1.2rem;
 }
 
 .tab-group {
@@ -377,6 +381,12 @@ input:-moz-placeholder { /* Firefox 18- */
 
 @media(min-width: 768px) {
 
+  /********* General *********/
+
+  .sticky_footer {
+    min-height: calc(100vh - 154px);
+  }
+
   #header {
     display: flex;
     justify-content: space-between;
@@ -525,6 +535,12 @@ input:-moz-placeholder { /* Firefox 18- */
     font-size: 1.75rem;
   }
 
+  .year {
+    padding-top: 50px;
+    margin: 0;
+    margin-bottom: -25px,
+  }
+
   .container {
     display: flex;
     justify-content: space-evenly;
@@ -533,6 +549,7 @@ input:-moz-placeholder { /* Firefox 18- */
   #profile {
     flex-basis: 22.5%;
     order: 2;
+    margin-top: 30px;
   }
 
   .galleryContainer {
@@ -548,6 +565,7 @@ input:-moz-placeholder { /* Firefox 18- */
 
   #demos {
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 70px;
   }
 
   /*********** Trayectoria acordeon menus *****************/
@@ -558,6 +576,7 @@ input:-moz-placeholder { /* Firefox 18- */
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 70px;
   }
 
   .trayectoria_type_container {
@@ -568,11 +587,11 @@ input:-moz-placeholder { /* Firefox 18- */
 
   #contacto_container form {
     flex-basis: 40%;
-    margin-top: 50px;
+    padding-top: 70px;
   }
 
   #img_wrapper {
-    padding-top: 50px;
+    padding-top: 90px;
   }
 
 }

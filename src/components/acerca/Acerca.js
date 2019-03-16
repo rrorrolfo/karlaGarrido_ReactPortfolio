@@ -2,7 +2,7 @@ import React from "react";
 
 const Acerca = () => {
     return(
-        <div id="acerca">
+        <div id="acerca" className="sticky_footer">
 
             <h1>Karla Garrido</h1>
 
