@@ -1,7 +1,7 @@
 
 /*********** Colors *****************/
 
-#main_nav,
+.main_nav,
 #title,
 #header {
   background-color: #F7f7f7;
@@ -13,12 +13,12 @@
   font-family: 'Raleway', sans-serif;
 }
 
-#main_nav,
+.main_nav,
 #title {
   margin: 0;
 }
 
-#main_nav,
+.main_nav,
 #title,
 #profile,
 .actress,
@@ -71,13 +71,37 @@ ul {
 
 /*********** Main Navigator Menu *****************/
 
-#main_nav {
-  padding: 20px 0;
-  display: none;
+
+#menu_bars {
+  position: absolute;
+  top: 22.5px;
+  left: 20px;
+  z-index: 1000000;
 }
 
-#main_nav li {
+.main_nav {
+  display: none;
+  position: absolute;
+  top: 87px;
+  width: 100%;
+  z-index: 10000;
+}
+
+.main_nav li {
+  border-bottom: 1px solid #f2f5f7;
+}
+
+.link {
+  display: block;
   padding: 10px 0;
+}
+
+.main_nav li:last-child {
+  border-bottom: none;
+}
+
+.is_display {
+  display: initial;
 }
 
 /*********** Jumbotron *****************/
@@ -397,22 +421,32 @@ input:-moz-placeholder { /* Firefox 18- */
     flex-basis: 30%;
   }
   
-  #main_nav {
+  .main_nav {
     align-items: center;
     display: initial;
     display: flex;
+    position: initial;
     flex-basis: 70%;
+    padding: 20px 0;
   }
 
-  #main_nav li {
+  .main_nav li {
     border-right: 1px dotted #000;
     padding: 15px;
     margin: auto 0;
     font-size: 1.2rem;
   }
 
-  #main_nav li:last-child {
+  .main_nav li:last-child {
     border-right: none
+  }
+
+  #menu_bars {
+    display: none;
+  }
+
+  .link {
+    padding: 0;
   }
 
   #presentation_text {
@@ -452,7 +486,7 @@ input:-moz-placeholder { /* Firefox 18- */
     margin-top: 53px;
   }
 
-  /*********** Portafolio *****************/
+  /*********** Acerca *****************/
 
   #acerca {
     width: 90%;
@@ -499,7 +533,7 @@ input:-moz-placeholder { /* Firefox 18- */
 @media(min-width: 1024px) {
 
   #title,
-  #main_nav {
+  .main_nav {
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -508,11 +542,11 @@ input:-moz-placeholder { /* Firefox 18- */
     padding-top: 22.5px;
   }
 
-  #main_nav{
+  .main_nav{
     padding-left: 5%;
   }
 
-  #main_nav li {
+  .main_nav li {
     font-size: 1.35rem;
   }
 
