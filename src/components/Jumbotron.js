@@ -1,6 +1,6 @@
 import React from "react";
 const portada_lg = require("../img/portada.jpg");
-const portada_sm = require("../img/portada_mob.jpg");
+const portada_sm = require("../img/mobile_portada2.jpg");
 
 const Jumbotron = () => {
     return (
