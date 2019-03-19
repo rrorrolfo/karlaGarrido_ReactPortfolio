@@ -186,11 +186,12 @@ ul {
   margin-bottom: 0;
 }
 
-/*********** Acerca Section *****************/
+/*********** Demos Section *****************/
 
 #demos {
   width: 90%;
   margin: 0 auto;
+  padding-top: 70px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
@@ -597,10 +598,6 @@ input:-moz-placeholder { /* Firefox 18- */
 
   /*********** Demos *****************/
 
-  #demos {
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 70px;
-  }
 
   /*********** Trayectoria acordeon menus *****************/
 

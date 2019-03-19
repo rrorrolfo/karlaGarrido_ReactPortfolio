@@ -6,6 +6,11 @@ const Demos = () => {
         <div id="demos" className="sticky_footer">
 
             <div>
+                <iframe src="https://www.youtube.com/embed/OWk1NIT3PuY" title="Demo Reel 2018"></iframe>
+                <h2>Demo Reel 2018</h2>
+            </div>
+
+            <div>
                 <iframe src="https://www.youtube.com/embed/2NQSHHJWxD0" title="Demo Reel 2016"></iframe>
                 <h2>Demo Reel 2016</h2>
             </div>
