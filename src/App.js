@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import { 
   BrowserRouter,
-  Route} from "react-router-dom";
+  Route,
+  Redirect,
+  Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Jumbotron from "./components/Jumbotron";
 import Acerca from "./components/acerca/Acerca";
@@ -12,6 +14,7 @@ import Demos from "./components/demos/Demos";
 import Contacto from "./components/contacto/Contacto";
 import Footer from "./components/Footer";
 import SocialMedia from "./components/SocialMedia";
+import NotFound from "./components/NotFound";
 
 class App extends Component {
   render() {
@@ -20,12 +23,16 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Header />
-          <Route exact path="/" component={ Jumbotron }/>
-          <Route path="/acerca" component={ Acerca }/>
-          <Route path="/portafolio" component={ Portafolio }/>
-          <Route path="/trayectoria" component={ Trayectoria }/>
-          <Route path="/demos" component={ Demos }/>
-          <Route path="/contacto" component={ Contacto }/>
+          <Switch>
+            <Route exact path="/" component={ Jumbotron }/>
+            <Route path="/acerca" component={ Acerca }/>
+            <Route path="/portafolio" component={ Portafolio }/>
+            <Route path="/trayectoria" component={ Trayectoria }/>
+            <Route path="/demos" component={ Demos }/>
+            <Route path="/contacto" component={ Contacto }/>
+            <Route path="/notfound" component={ NotFound }/>
+            <Route render={ () => <Redirect to="/notfound" /> }/>
+          </Switch>
           <Footer />
           <SocialMedia />
         </div>
