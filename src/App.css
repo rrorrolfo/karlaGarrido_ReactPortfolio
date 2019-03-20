@@ -116,6 +116,9 @@ ul {
   position: fixed;
 }
 
+
+.portada_md,
+.portada_mediana,
 .portada_lg {
   display: none;
 }
@@ -434,6 +437,30 @@ input:-moz-placeholder { /* Firefox 18- */
 
 /*********** Media Queries *****************/
 
+@media(min-width: 460px) {
+
+  .portada_sm {
+    display: none;
+  }
+
+  .portada_md {
+    display: initial;
+  }
+
+}
+
+@media(min-width: 650px) {
+
+  .portada_md {
+    display: none;
+  }
+
+  .portada_mediana {
+    display: initial;
+  }
+
+}
+
 @media(min-width: 768px) {
 
   /********* General *********/
@@ -482,14 +509,6 @@ input:-moz-placeholder { /* Firefox 18- */
 
   #presentation_text {
     top: 55%;
-  }
-
-  .portada_sm {
-    display: none;
-  }
-
-  .portada_lg {
-    display: initial;
   }
 
   /*********** Portafolio *****************/
@@ -573,6 +592,14 @@ input:-moz-placeholder { /* Firefox 18- */
     padding-top: 22.5px;
   }
 
+  .portada_mediana {
+    display: none;
+  }
+
+  .portada_lg {
+    display: initial;
+  }
+  
   .main_nav{
     padding-left: 5%;
   }
