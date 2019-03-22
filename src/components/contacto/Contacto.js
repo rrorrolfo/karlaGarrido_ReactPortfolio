@@ -1,16 +1,65 @@
 import React, { Component } from "react";
+import axios from "axios";
 const karla_sonriendo = require("../../img/sonriendo.jpg");
 
 class Contacto extends Component {
 
+    state = {
+        nombre: "",
+        email: "",
+        subject: "",
+        message: "",
+    }
+
     handleSubmit = event => {
 
         event.preventDefault();
-        this.validateEmptyField("nombre");
-        this.validateEmptyField("subject");
-        this.validateEmptyField("message");
-        this.validateEmail();
 
+        let errors = false;
+
+        if ( !this.validateEmptyField("nombre") ) {
+            errors = true;
+        } 
+        
+        if( !this.validateEmptyField("subject") ) {
+            errors = true
+        }
+        
+        if( !this.validateEmptyField("message") ) {
+            errors = true
+        }
+        
+        if( !this.validateEmail() ) {
+            errors = true
+        }
+
+        if ( errors ) {
+                console.log("not send");
+        } else {
+
+            // Creates Headers to authenticate user and send it together with the request
+            const requestOptions = {
+                headers: { 
+                    'Content-Type': 'application/json'
+                }
+            };
+
+            axios.post("https://node-mailer-rcph.herokuapp.com//contact", {
+                nombre: this.state.nombre,
+                email: this.state.email,
+                subject: this.state.subject,
+                message: this.state.message
+            }, requestOptions)
+            .then(response => console.log(response))
+
+        }
+        
+    }
+
+    // Handles change in an input, updates state to the value of the correspondant input
+    handleChange = event => {
+        const { name, value } = event.target;
+        this.setState({ [name]: value });
     }
 
     /* From field validation methods*/
@@ -25,10 +74,12 @@ class Contacto extends Component {
 
         if (field_to_validate.value === "") {
             field_to_validate.nextElementSibling.className = "validation_error";
-             field_to_validate.classList.add("validation_error_background")
+             field_to_validate.classList.add("validation_error_background");
+             return false
         } else {
             field_to_validate.nextElementSibling.className = "validation_error is_hidden";
             field_to_validate.className =  "";
+            return true
         }
 
     }
@@ -83,19 +134,19 @@ class Contacto extends Component {
                 <form onSubmit={this.handleSubmit} className="margin_centered">
 
                     <div className="input_container">
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" onKeyUp={ this.realTimevalidation }/>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" onKeyUp={ this.realTimevalidation } onChange={ this.handleChange }/>
                     </div>
 
                     <div className="input_container">
-                        <input type="email" id="email" name="email" placeholder="Correo Electronico" onKeyUp={ this.validateEmail }/>
+                        <input type="email" id="email" name="email" placeholder="Correo Electronico" onKeyUp={ this.validateEmail } onChange={ this.handleChange }/>
                     </div>
 
                     <div className="input_container">
-                        <input type="text" id="subject" name="subject" placeholder="Asunto" onKeyUp={ this.realTimevalidation }/>
+                        <input type="text" id="subject" name="subject" placeholder="Asunto" onKeyUp={ this.realTimevalidation } onChange={ this.handleChange }/>
                     </div>
                     
                     <div className="input_container">
-                        <textarea id="message" rows="4" name="message" placeholder="Mensaje" onKeyUp={ this.realTimevalidation }></textarea>
+                        <textarea id="message" rows="4" name="message" placeholder="Mensaje" onKeyUp={ this.realTimevalidation } onChange={ this.handleChange } ></textarea>
                     </div>
 
                     <button type="submit" id="submit">Enviar</button>
