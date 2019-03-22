@@ -44,7 +44,7 @@ class Contacto extends Component {
                 }
             };
 
-            axios.post("https://node-mailer-rcph.herokuapp.com//contact", {
+            axios.post("https://node-mailer-rcph.herokuapp.com/contact", {
                 nombre: this.state.nombre,
                 email: this.state.email,
                 subject: this.state.subject,
