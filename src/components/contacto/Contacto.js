@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import SuccessMessage from "./SuccessMessage";
 const karla_sonriendo = require("../../img/sonriendo.jpg");
 
 class Contacto extends Component {
@@ -9,11 +10,18 @@ class Contacto extends Component {
         email: "",
         subject: "",
         message: "",
+        isLoading: false,
+        emailSent: false
     }
 
     handleSubmit = event => {
 
         event.preventDefault();
+
+        // Resets emailSent property in case user sends two messages in a row
+        this.setState({
+            emailSent: false
+        })
 
         let errors = false;
 
@@ -34,8 +42,12 @@ class Contacto extends Component {
         }
 
         if ( errors ) {
-                console.log("not send");
+                console.log("email not sent");
         } else {
+
+            this.setState({
+                isLoading: true
+            })
 
             // Creates Headers to authenticate user and send it together with the request
             const requestOptions = {
@@ -50,7 +62,13 @@ class Contacto extends Component {
                 subject: this.state.subject,
                 message: this.state.message
             }, requestOptions)
-            .then(response => console.log(response))
+            .then(response => {
+                this.setState({
+                    isLoading: false,
+                    emailSent: response.data
+                })
+            })
+            .catch( error => console.log(error))
 
         }
         
@@ -149,7 +167,10 @@ class Contacto extends Component {
                         <textarea id="message" rows="4" name="message" placeholder="Mensaje" onKeyUp={ this.realTimevalidation } onChange={ this.handleChange } ></textarea>
                     </div>
 
-                    <button type="submit" id="submit">Enviar</button>
+                    <button type="submit" id="submit">{ this.state.isLoading ? ("Enviando...") : ("Enviar")}</button>
+
+                    {/* Displays success message if a succesful response is returned */}
+                    { this.state.emailSent === "success" ? <SuccessMessage /> : ("")}
 
                 </form>
 
