@@ -11,6 +11,7 @@ import Acerca from "./components/acerca/Acerca";
 import Portafolio from './components/portafolio/Portafolio';
 import Trayectoria from "./components/trayectoria/Trayectoria";
 import Demos from "./components/demos/Demos";
+import Galeria from "./components/galeria/Galeria";
 import Contacto from "./components/contacto/Contacto";
 import Footer from "./components/Footer";
 import SocialMedia from "./components/SocialMedia";
@@ -29,6 +30,7 @@ class App extends Component {
             <Route path="/portafolio" component={ Portafolio }/>
             <Route path="/trayectoria" component={ Trayectoria }/>
             <Route path="/demos" component={ Demos }/>
+            <Route path="/galeria" component={ Galeria }/>
             <Route path="/contacto" component={ Contacto }/>
             <Route path="/notfound" component={ NotFound }/>
             <Route render={ () => <Redirect to="/notfound" /> }/>

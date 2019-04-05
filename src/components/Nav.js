@@ -29,6 +29,7 @@ const Nav = () => {
                 <li onClick={ toogle_menu }><NavLink to="/portafolio" className="link">Portafolio</NavLink></li>
                 <li onClick={ toogle_menu }><NavLink to="/trayectoria" className="link">Trayectoria</NavLink></li>
                 <li onClick={ toogle_menu }><NavLink to="/demos" className="link">Demo Reel</NavLink></li>
+                <li onClick={ toogle_menu }><NavLink to="/galeria" className="link">Galeria</NavLink></li>
                 <li onClick={ toogle_menu }><NavLink to="/contacto" className="link">Contacto</NavLink></li>
             </ul>
 
