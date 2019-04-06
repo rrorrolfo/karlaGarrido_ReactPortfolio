@@ -107,6 +107,56 @@
                 "description": ["Personaje: Ana.", "Dirección: Danny Chamo Serrano.", "Producción: Paria Films, 2016.", "Nominada a MEJOR ACTRÍZ en los premios AMCI del 2016."],
                 "id": 25
             }
+        ],
+        "galleryPhotos" : [
+            {
+                "src": "../../img/galeriaImgs/18hermana.jpg",
+                "title": "Mucho ruido y pocas nueces de William Shakespeare",
+                "textoA": "Dirección: Juan Mora (2011)",
+                "textoB": "Teatro: Julio Castillo"
+            },
+            {
+                "src": "../../img/galeriaImgs/16triciclo.jpg",
+                "title": "El Maleficio",
+                "textoA": "Dirección: Alexia Ávila (2012)",
+                "textoB": "Foro: Antonio López Mancera"
+            },
+            {
+                "src": "../../img/galeriaImgs/1suelo.jpg",
+                "title": "Versus",
+                "textoA": "Unipersonal - Septiembre 2016",
+                "textoB": "Foro: Carretera 45"
+            },
+            {
+                "src": "../../img/galeriaImgs/rodaje16.jpg",
+                "title": "Juan Machete",
+                "textoA": "Paria (2015)",
+                "textoB": ""
+            },
+            {
+                "src": "../../img/galeriaImgs/barcos.jpg",
+                "title": "Los Barcos",
+                "textoA": "Videoclip de Adryana Marroquín (2016)",
+                "textoB": ""
+            },
+            {
+                "src": "../../img/galeriaImgs/rodaje1.jpg",
+                "title": "Sueños",
+                "textoA": "48 FilmFest (2015)",
+                "textoB": ""
+            },
+            {
+                "src": "../../img/galeriaImgs/muros.jpg",
+                "title": "Señora Acero 3",
+                "textoA": "Telemundo (2016)",
+                "textoB": ""
+            },
+            {
+                "src": "../../img/galeriaImgs/rodaje3.jpg",
+                "title": "Chalma",
+                "textoA": "Bala Films (2015)",
+                "textoB": ""
+            }
         ]
     }
 }
