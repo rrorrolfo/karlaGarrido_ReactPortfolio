@@ -25,7 +25,10 @@
 .year,
 #acerca h1,
 #copywright,
-.title_acordeon_menu {
+.title_acordeon_menu,
+.sobre-foto h3,
+.sobre-foto p,
+.Galeria h1 {
   text-align: center;
 }
 
@@ -282,6 +285,72 @@ span.plus_symbol {
 
 .tab input:checked ~ .tab-content {
   max-height: 12em;
+}
+
+/*********** Gallery of photos *****************/
+
+.Galeria {
+  padding-top: 20px;
+}
+
+.Galeria h1 {
+  margin-bottom: 10px;
+}
+
+.photo-container {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.foto {
+  position: relative;
+  padding: 0 0 1px;
+  overflow: hidden;
+}
+
+.sobre-foto p {
+  padding: 0 10px;
+}
+
+.sobre-foto {
+  background: rgba(0,0,0, .6 );
+  color: #FFF;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .6s;
+}
+
+.sobre-foto:hover {
+  opacity:1; 
+}
+
+.foto img {
+ transform-origin: top left; 
+  transition: transform .3s;
+  width: 100%;
+}
+
+.foto:hover img{
+  transform: scale(1.1);
+}
+
+.zoom-foto {
+  display: inline-block;
+  color: #000;
+  padding: 15px 33px;
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
 }
 
 /*********** Contacto section *****************/
@@ -569,6 +638,19 @@ input:-moz-placeholder { /* Firefox 18- */
     margin: 0 auto;
   }
 
+  /*********** Fotos Gallery *****************/
+
+  .Galeria {
+    padding-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .gallery_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
   /*********** Form *****************/
 
   #contacto_container {
@@ -610,10 +692,6 @@ input:-moz-placeholder { /* Firefox 18- */
 
   .portada_lg {
     display: initial;
-  }
-  
-  .main_nav{
-    padding-left: 5%;
   }
 
   .main_nav li {
@@ -681,6 +759,12 @@ input:-moz-placeholder { /* Firefox 18- */
 
   .trayectoria_type_container {
     flex-basis: 30%;
+  }
+
+  /*********** Galery of photos *****************/
+
+  .gallery_container {
+    grid-template-columns: 33% 33% 33%;
   }
 
   /*********** Form *****************/
