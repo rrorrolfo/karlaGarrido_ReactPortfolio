@@ -1,44 +1,44 @@
 import React from "react";
-import img from "../../img/galeriaImgs/18hermana.jpg";
-import suelo from "../../img/galeriaImgs/1suelo.jpg";
-import triciclo from "../../img/galeriaImgs/16triciclo.jpg";
+import PhotoContainer from "./PhotoContainer";
+import { photos } from "../../data/gallery.json"
+const images = [
+    require("../../img/galeriaImgs/18hermana.jpg"),
+    require("../../img/galeriaImgs/16triciclo.jpg"),
+    require("../../img/galeriaImgs/1suelo.jpg"),
+    require("../../img/galeriaImgs/rodaje16.jpg"),
+    require("../../img/galeriaImgs/barcos.jpg"),
+    require("../../img/galeriaImgs/rodaje1.jpg"),
+    require("../../img/galeriaImgs/muros.jpg"),
+    require("../../img/galeriaImgs/rodaje3.jpg")
+]
 
 const Galeria = () => {
+
+    const displayPhotos = () => {
+        
+        const galleryPhotos = photos.galleryPhotos;
+        const containersToDisplay = []
+
+        galleryPhotos.map( (photo, index) => containersToDisplay.push(<PhotoContainer 
+            source={ images[index] } 
+            title={ photo.title } 
+            textA={ photo.textoA } 
+            textB={ photo.textoB }
+            />)
+        )
+
+        return containersToDisplay
+    }
+    
+
     return(
         <div className="Galeria">
 
             <h1>Galeria de fotos</h1>
 
             <div className="gallery_container">
-                <div className="photo-container">
-                    <div className="foto">
-                    <img src={ img } alt="Foto de galeria"/>
-                        <div className="sobre-foto"> 
-                        <h3>Mucho ruido y pocas nueces de William Shakespeare</h3>
-                        <p>Dirección: Juan Mora (2011)<br/>Teatro: Julio Castillo</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="photo-container">
-                    <div class="foto">
-                    <img src={ suelo } alt="Foto de galeria"/>
-                        <div class="sobre-foto"> 
-                        <h3>Mucho ruido y pocas nueces de William Shakespeare</h3>
-                        <p>Dirección: Juan Mora (2011)<br/>Teatro: Julio Castillo</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="photo-container">
-                    <div class="foto">
-                    <img src={ triciclo } alt="Foto de galeria"/>
-                        <div class="sobre-foto"> 
-                        <h3>Mucho ruido y pocas nueces de William Shakespeare</h3>
-                        <p>Dirección: Juan Mora (2011)<br/>Teatro: Julio Castillo</p>
-                        </div>
-                    </div>
-                </div>
+                {displayPhotos()}
 
             </div>
             
