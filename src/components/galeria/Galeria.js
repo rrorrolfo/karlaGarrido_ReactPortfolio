@@ -12,6 +12,20 @@ const images = [
     require("../../img/galeriaImgs/rodaje3.jpg")
 ]
 
+/*
+    // - Attempt to dinamically require photos
+    const getPhotoUrl = array => {
+        const arrayPhotos = [];
+        array.forEach(
+            photo => arrayPhotos.push(photo.src)
+        )
+
+        return arrayPhotos
+    }
+
+    const photoImages = getPhotoUrl(photos.galleryPhotos);
+*/
+
 const Galeria = () => {
 
     const displayPhotos = () => {
