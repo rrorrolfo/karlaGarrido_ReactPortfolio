@@ -24,6 +24,7 @@ const Galeria = () => {
             title={ photo.title } 
             textA={ photo.textoA } 
             textB={ photo.textoB }
+            key={ photo.title }
             />)
         )
 
