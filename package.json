@@ -25,6 +25,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.2",
     "terser": "^3.14.1"
   }
 }
