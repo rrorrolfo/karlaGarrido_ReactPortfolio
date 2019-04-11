@@ -1,9 +1,9 @@
 import React from "react";
 import "./loader.css";
 
-const Loader = () => {
+const Loader = props => {
     return(
-        <div className="sticky_footer">
+        <div className={ props.isLoading ? ("full_screen") : ("is_hidden") }>
             <div className="loader">Loading...</div>
         </div>
     )
